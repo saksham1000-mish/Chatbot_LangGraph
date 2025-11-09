@@ -32,7 +32,7 @@ if st.sidebar.button('New Chat'):
 st.sidebar.header('My Conversations')
 
 for thread_id in st.session_state['chat_threads']:
-    st.sidebar.text(st.session_state['thread_id'])
+    st.sidebar.button(str(thread_id))
 
 
 for message in st.session_state['message_history']:
